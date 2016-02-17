@@ -53,7 +53,7 @@ a#toTop{
 }
 .logo a{
 	background: #F43C60;
-  padding: 1.3em 0.5em;
+  padding: 0.3em 0.5em;
   display:inline-block;
 }
 .logo h1 a{
@@ -204,7 +204,7 @@ ul.dropdown-menu {
   }
 .caption{
 	position: absolute;
-	top: 35%;
+	bottom: 15%;
 	left:10%;
     background-color: rgba(0,0,0,.5);
     padding: 10px;
@@ -879,7 +879,17 @@ i.goog:hover{
 .top-banner{
 	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
-	min-height:102px;
+	min-height:150px;
+}
+.top-banner-faber{
+    background:url(../images/faber.jpg) no-repeat 0px 0px;
+    background-size:cover;
+    min-height:150px;
+}
+.top-banner-franke{
+    background:url(../images/franke.jpg) no-repeat 0px 0px;
+    background-size:cover;
+    min-height:150px;
 }
 .about {
 	padding: 3em 0px ;
@@ -1104,6 +1114,7 @@ h3.ghj {
 }
 .gallery-grid{
 	position: relative;
+    padding-bottom: 15px;
 }
 .gallery-1{
 	margin-top:25px;
@@ -1321,7 +1332,7 @@ margin-top:0.5em;
   min-height: 570px;
 }
 .caption {
-  top: 32%;
+  bottom: 12%;
   left: 5%;
 }
 .content-right h2 {
@@ -1335,7 +1346,7 @@ a.btn-left {
   width: 20%;
 }
 .caption {
-  top: 25%;
+  bottom: 12%;
 }
 .banner1 {
   background: url(../images/Slider/1.jpg) no-repeat 0px 0px;
@@ -1427,8 +1438,22 @@ a.btn-left {
     padding: 1.45em 0.9em;
     font-size: .9em;
 }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #F43C60;
+    font-family: 'LobsterTwo-Regular';
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.nav-pills-a {
+    padding: 10px 15px !important;
+    font-family: 'LobsterTwo-Regular';
+    font-size: 0.9em;
+    text-align: center;
+}
 .logo a {
-    padding: 1.5em 0.3em;
+    padding: 0.5em 0.3em;
 }
 .search {
     margin: .8em 0 .8em 7em;
@@ -1447,7 +1472,7 @@ div#bs-example-navbar-collapse-1 {
     width: 78%;
 }
 .caption {
-  top: 25%;
+  bottom: 10%;
 }
 .caption h3 {
   font-size: 2.5em;
@@ -1670,10 +1695,10 @@ button.navbar-toggle{
 }
 @media(max-width:480px){
 .logo h1 a {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 .logo a {
-  padding: 1em 0.5em;
+  padding: 0.3em 0.5em;
 }
 .search {
   width: 47%;
@@ -1840,7 +1865,6 @@ ul.callbacks_tabs.callbacks2_tabs {
 }
 .gallery-grid {
   width: 50%;
-  margin-bottom: 1em;
 }
 .gallery-1 {
   margin-top: 0;
@@ -1867,12 +1891,18 @@ ul.callbacks_tabs.callbacks2_tabs {
   padding: 2em 0;
 }
 .top-banner {
-  min-height: 63px;
+  min-height: 85px;
+}
+.top-banner-faber {
+    min-height: 85px;
+}
+.top-banner-franke {
+    min-height: 85px;
 }
 }
 @media(max-width:320px) {
     .logo h1 a {
-        font-size: 0.7em;
+        font-size: 0.4em;
     }
 
     .logo {
@@ -1910,7 +1940,7 @@ ul.callbacks_tabs.callbacks2_tabs {
     }
 
     .caption {
-        top: 20%;
+        bottom: 10%;
     }
 
     .banner1, .banner3, .banner2 {
@@ -1976,7 +2006,15 @@ ul.callbacks_tabs.callbacks2_tabs {
     }
 
     .top-banner {
-        min-height: 44px;
+        min-height: 65px;
+    }
+
+    .top-banner-faber {
+        min-height: 65px;
+    }
+
+    .top-banner-franke {
+        min-height: 65px;
     }
 
     .about-top h3, h2.top, .gallery h3, .contact-top h3 {
@@ -2013,6 +2051,7 @@ ul.callbacks_tabs.callbacks2_tabs {
     .gallery-grid {
         width: 100%;
         padding: 0;
+        padding-bottom: 15px;
     }
 
     .contact-left {
@@ -2071,4 +2110,27 @@ ul.callbacks_tabs.callbacks2_tabs {
     color: #F43C60;
     font-weight: bolder;
     font-size: large;
+}
+.nav-pills-width{
+    width: 49%;
+}
+
+@media screen and (min-width: 892px)
+{
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        color: #fff;
+        background-color: #F43C60;
+        font-family: 'LobsterTwo-Regular';
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+.nav-pills-a {
+    padding: 10px 15px !important;
+    font-family: 'LobsterTwo-Regular';
+    font-size: 1.5em;
+    text-align: center;
+}
+.nav-pills{
+    padding-bottom: 20px;
 }
